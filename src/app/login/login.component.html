@@ -1,0 +1,14 @@
+<div class="login-container" *ngIf="!isLoggedIn">
+  <h1 class="login-title">WELCOME</h1>
+  <h2 class="login-instruction">Please log in</h2>
+  <div class="btn btn-login" (click)="login()">
+    <div class="svg-wrapper">
+      <img
+        src="../../assets/icons/login-icon.svg"
+        alt="login-icon"
+        class="log log--in"
+      />
+    </div>
+    <span>Log in</span>
+  </div>
+</div>
