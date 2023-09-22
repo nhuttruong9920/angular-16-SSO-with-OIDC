@@ -1,7 +1,8 @@
 import { AuthConfig } from 'angular-oauth2-oidc';
 
 export const authCodeFlowConfig: AuthConfig = {
-  requireHttps: false,
+  // requireHttps: false,
+
   issuer: 'https://localhost:5001',
   redirectUri: 'http://localhost:4200/signin-oidc',
   clientId: 'avema_client',

@@ -1,0 +1,38 @@
+.active-badge {
+  background-color: #b7eb8f;
+}
+
+.inactive-badge {
+  background-color: #ffa39e;
+}
+
+.p-td {
+  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+}
+
+.tableFixHead {
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 700px;
+  overflow-x: auto;
+}
+
+.tableFixHead th {
+  position: sticky; /* make the table heads sticky */
+  top: 0px; /* table head will be placed from the top of the table and sticks to it */
+}
+
+table {
+  overflow-x: scroll;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.75);
+}

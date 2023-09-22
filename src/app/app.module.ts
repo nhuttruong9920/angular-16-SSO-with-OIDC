@@ -6,16 +6,30 @@ import { AppComponent } from './app.component';
 
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { TodoComponent } from './todo/todo.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { MapComponent } from './map/map.component';
+import { HeroComponent } from './hero/hero.component';
+import { HighwaysComponent } from './highways/highways.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    TodoComponent,
+    NavigationComponent,
+    MapComponent,
+    HeroComponent,
+    HighwaysComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     OAuthModule.forRoot(),
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

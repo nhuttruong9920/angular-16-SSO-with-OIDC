@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+
+<div class="login-container" *ngIf="!isLoggedIn">
+  <p class="login-title">WELCOME</p>
+  <p class="login-instruction">You're are not logged in!</p>
+  <div class="btn btn-login" (click)="login()">
+    <div class="svg-wrapper">
+      <img
+        src="../../assets/icons/login-icon.svg"
+        alt="login-icon"
+        class="log log--in"
+      />
+    </div>
+    <span>Log in now</span>
+  </div>
+</div>
+
+<div *ngIf="isLoggedIn">
+  <app-navigation></app-navigation>
+
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

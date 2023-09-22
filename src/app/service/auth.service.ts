@@ -16,7 +16,7 @@ export class AuthService {
   }
 
   login() {
-    this.oauthService.initImplicitFlow();
+    this.oauthService.initLoginFlow();
   }
 
   logout() {

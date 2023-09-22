@@ -1,0 +1,22 @@
+<div class="top-nav">
+  <div class="top-nav-menu">
+    <span class="top-nav-title" routerLink="/home">OIDC</span>
+  </div>
+  <div class="top-nav-menu">
+    <span class="top-nav-user noselect" title="Your username">{{
+      claims["sub"]
+    }}</span>
+    <i
+      class="fas fa-sign-out-alt top-nav-logout"
+      title="Log out"
+      (click)="logout()"
+    ></i>
+  </div>
+</div>
+<div class="side-bar">
+  <div routerLink="/home" class="side-bar-item">Home</div>
+  <div routerLink="/map" class="side-bar-item">Map</div>
+  <div routerLink="/hero" class="side-bar-item">Heroes</div>
+  <div routerLink="/highway" class="side-bar-item">Highways</div>
+  <div routerLink="/todo" class="side-bar-item">To do</div>
+</div>
